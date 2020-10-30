@@ -48,8 +48,7 @@ jupyter-notebook --no-browser --port=101
 
 
 
-## Downloading a Dataset to Google Compute Instance directly from Kaggle
-Use Kaggle API to Download Data Directly to Cloud Instance
+## Use Kaggle API to Download Data Directly to Cloud Instance
 
 ### 1. Install Kaggle: SSH into your instance, and pip install kaggle <br>
 ### 2. Get API Credentials All API requests need credentials to identify yourself. Just go to https://www.kaggle.com/ 3[kaggle_username]/account, scroll down and click “Create API Token”. It will download kaggle.json with your username & authkey.<br>
