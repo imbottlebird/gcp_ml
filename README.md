@@ -14,13 +14,11 @@ RSA Key
 
 ### 4. Install Anaconda / Jupyter Notebook
 
-Install Anaconda<br>
-
+#install Anaconda<br>
 " wget https://repo.continuum.io/archive/Anaconda3-5.3.1-Linux-x86_64.sh <br>
 " bash Anaconda3-5.3.1-Linux-x86_64.sh
 
-Install Jupyter Notebook <br>
-
+#install Jupyter Notebook<br>
 "conda install notebook
 
 ### 5. Configure Jupyter Notebook setting
@@ -36,7 +34,7 @@ c.NotebookApp.port = 80<br>
 
 ### 6. Use browser to open jupyter notebook
 
-jupyter-notebook --no-browser --port=101
+jupyter-notebook --no-browser --port=80
 
 [external IP address]:[port number] in your browser
 
