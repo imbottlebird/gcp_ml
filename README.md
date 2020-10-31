@@ -18,6 +18,14 @@ RSA Key
 $ wget https://repo.continuum.io/archive/Anaconda3-5.3.1-Linux-x86_64.sh <br>
 $ bash Anaconda3-5.3.1-Linux-x86_64.sh
 
+Do you wish the installer to prepend the 
+Anaconda3 install location to PATH 
+in your /home/haroldsoh/.bashrc ? 
+[no] >>> yes
+
+To make use of Anaconda right away, source your bashrc:
+$ source ~/.bashrc
+
 #in case the jupyter notebook is not automatically installed, use the command line below to install.
 $ conda install notebook
 
@@ -39,12 +47,14 @@ c.NotebookApp.token = '' #include this in case you want to disable the token aut
 $ jupyter-notebook --no-browser --port=8880
 
 [external IP address]:[port number] in your browser
-
+<br>
 
 
 ## Use Kaggle API to Download Data Directly to Cloud Instance
 
-### 1. Install Kaggle: SSH into your instance, and pip install kaggle <br>
+### 1. Install Kaggle<br>
+$ pip install kaggle <br>
+
 ### 2. Get API Credentials<br>
 All API requests need credentials to identify yourself. Go to https://www.kaggle.com/[kaggle_username]/account and click “Create API Token”.
 It will download kaggle.json with your username & authkey.<br>
@@ -53,6 +63,9 @@ You need to put kaggle.json into /home/[user name]/.kaggle.<br>
 ### 4. Download your dataset<br>
 You can just use this command:<br>
 $ kaggle datasets download -d [dataset_identifier] -p *your_destination_path*
+
+For this project,<br>
+$ kaggle datasets download -d yelp-dataset/yelp-dataset
 
 To get dataset_identifier, you can just browse to the dataset you want on the kaggle website. 
 There’s actually a button that helpfully gives you the API command directly.
