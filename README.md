@@ -15,26 +15,28 @@ RSA Key
 ### 4. Install Anaconda / Jupyter Notebook
 
 #install Anaconda<br>
-" wget https://repo.continuum.io/archive/Anaconda3-5.3.1-Linux-x86_64.sh <br>
-" bash Anaconda3-5.3.1-Linux-x86_64.sh
+$ wget https://repo.continuum.io/archive/Anaconda3-5.3.1-Linux-x86_64.sh <br>
+$ bash Anaconda3-5.3.1-Linux-x86_64.sh
 
-#install Jupyter Notebook<br>
-"conda install notebook
+#in case the jupyter notebook is not automatically installed, use the command line below to install.
+$ conda install notebook
 
 ### 5. Configure Jupyter Notebook setting
 
-jupyter notebook --generate-config 
-nano ~/.jupyter/jupyter_notebook_config.py
+$ jupyter notebook --generate-config 
+$ nano ~/.jupyter/jupyter_notebook_config.py
 
 Insert as below <br>
 c = get_config()<br>
 c.NotebookApp.ip = '*'<br>
 c.NotebookApp.open_browser = False<br>
 c.NotebookApp.port = 8880<br>
+c.NotebookApp.token = '' #include this in case you want to disable the token authentication<br>
 
 ### 6. Use browser to open jupyter notebook
 
-jupyter-notebook --no-browser --port=8880
+#start the jupyter notebook server
+$ jupyter-notebook --no-browser --port=8880
 
 [external IP address]:[port number] in your browser
 
@@ -43,10 +45,14 @@ jupyter-notebook --no-browser --port=8880
 ## Use Kaggle API to Download Data Directly to Cloud Instance
 
 ### 1. Install Kaggle: SSH into your instance, and pip install kaggle <br>
-### 2. Get API Credentials All API requests need credentials to identify yourself. Just go to https://www.kaggle.com/[kaggle_username]/account, scroll down and click “Create API Token”. It will download kaggle.json with your username & authkey.<br>
-### 3. Load Credentials on Instance You need to put kaggle.json into /home/[user name]/.kaggle.<br>
-### 4. Download your dataset You can just use this command:<br>
-kaggle datasets download -d [dataset_identifier] -p *your_destination_path*
+### 2. Get API Credentials<br>
+All API requests need credentials to identify yourself. Go to https://www.kaggle.com/[kaggle_username]/account and click “Create API Token”.
+It will download kaggle.json with your username & authkey.<br>
+### 3. Load Credentials on Instance<br>
+You need to put kaggle.json into /home/[user name]/.kaggle.<br>
+### 4. Download your dataset<br>
+You can just use this command:<br>
+$ kaggle datasets download -d [dataset_identifier] -p *your_destination_path*
 
 To get dataset_identifier, you can just browse to the dataset you want on the kaggle website. 
 There’s actually a button that helpfully gives you the API command directly.
