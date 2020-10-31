@@ -30,11 +30,11 @@ Insert as below <br>
 c = get_config()<br>
 c.NotebookApp.ip = '*'<br>
 c.NotebookApp.open_browser = False<br>
-c.NotebookApp.port = 80<br>
+c.NotebookApp.port = 8880<br>
 
 ### 6. Use browser to open jupyter notebook
 
-jupyter-notebook --no-browser --port=80
+jupyter-notebook --no-browser --port=8880
 
 [external IP address]:[port number] in your browser
 
