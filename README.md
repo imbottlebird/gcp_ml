@@ -68,7 +68,7 @@ For this project,<br>
 $ kaggle datasets download -d yelp-dataset/yelp-dataset
 
 To get dataset_identifier, you can just browse to the dataset you want on the kaggle website. 
-There’s actually a button that helpfully gives you the API command directly.
+There is a button that gives you the API command directly.
 
 
 In case you want to unzip file on ssh follow the command below.<br>
