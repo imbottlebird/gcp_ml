@@ -23,10 +23,10 @@ Anaconda3 install location to PATH
 in your /home/haroldsoh/.bashrc ? 
 [no] >>> yes
 
-To make use of Anaconda right away, source your bashrc:
+To make use of Anaconda right away, source your bashrc:<br>
 $ source ~/.bashrc
 
-#in case the jupyter notebook is not automatically installed, use the command line below to install.
+#in case the jupyter notebook is not automatically installed, use the command line below to install.<br>
 $ conda install notebook
 
 ### 5. Configure Jupyter Notebook setting
@@ -43,7 +43,7 @@ c.NotebookApp.token = '' #include this in case you want to disable the token aut
 
 ### 6. Use browser to open jupyter notebook
 
-#start the jupyter notebook server
+#start the jupyter notebook server<br>
 $ jupyter-notebook --no-browser --port=8880
 
 [external IP address]:[port number] in your browser
