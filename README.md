@@ -10,7 +10,9 @@ Configure based on the computational needs.
 ### 2. Setup for SSH access
 RSA Key
 
-### 3. Create firewall rules (to allow jupyter notebook port, usually 80)
+### 3. Create firewall rules<br>
+This project will use port 8880.
+Also, check boxes for 'allow HTTP traffic' and 'allow HTTPS traffic'.
 
 ### 4. Install Anaconda / Jupyter Notebook
 
