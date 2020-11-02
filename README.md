@@ -33,7 +33,7 @@ $ conda install notebook
 
 ### 5. Configure Jupyter Notebook setting
 
-$ jupyter notebook --generate-config 
+$ jupyter notebook --generate-config <br>
 $ nano ~/.jupyter/jupyter_notebook_config.py
 
 Insert as below <br>
