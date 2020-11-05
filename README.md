@@ -1,7 +1,4 @@
-# yelp_sentiment
-
-
-Google Cloud Platform for Machine Learning
+# Google Cloud Platform for Machine Learning
 
 Follow the steps below:
 ### 1. Create VM instance
