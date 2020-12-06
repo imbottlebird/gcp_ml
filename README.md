@@ -5,7 +5,7 @@ Follow the steps below:
 Configure based on the computational needs.
 
 ### 2. Setup for SSH access
-RSA Key
+Generate the RSA Key and save it on the GCP platform for the authentication.
 
 ### 3. Create firewall rules<br>
 This project will use port 8880.
@@ -13,7 +13,7 @@ Also, check boxes for 'allow HTTP traffic' and 'allow HTTPS traffic'.
 
 ### 4. Install Anaconda / Jupyter Notebook
 
-#install Anaconda<br>
+install Anaconda<br>
 ```
 wget https://repo.continuum.io/archive/Anaconda3-5.3.1-Linux-x86_64.sh <br>
 ```
@@ -53,12 +53,12 @@ c.NotebookApp.token = '' #include this in case you want to disable the token aut
 
 ### 6. Use browser to open jupyter notebook
 
-#start the jupyter notebook server<br>
+Start the jupyter notebook server<br>
 ```
 jupyter-notebook --no-browser --port=8880
 ```
 
-[external IP address]:[port number] in your browser
+To access the notebook, enter "[external IP address]:[port number]" in your browser.
 <br>
 
 
@@ -70,7 +70,8 @@ pip install kaggle
 ```
 
 ### 2. Get API Credentials<br>
-All API requests need credentials to identify yourself. Go to https://www.kaggle.com/[kaggle_username]/account and click “Create API Token”.
+All API requests need credentials to identify yourself. <br>
+Go to https://www.kaggle.com/[kaggle_username]/account and click “Create API Token”.
 It will download kaggle.json with your username & authkey.<br>
 ### 3. Load Credentials on Instance<br>
 You need to save kaggle.json at /home/[user name]/.kaggle.<br>
